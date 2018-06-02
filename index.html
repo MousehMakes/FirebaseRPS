@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+	<!-- Bootswatch Styling for Improving the Aesthetics -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Moment -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<!-- Rivets -->
+	<script src="rivets.bundled.min.js"></script>
+
+	<!-- Links to Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/live/3.6/firebase.js"></script>
+	<title>Rock Paper Scissors Online!</title>
+
+</head>
+
+<body>
+
+	<div id="rivetsContainer">
+		<div class="container-fluid">
+
+
+			<div class="jumbotron center-block">Rock Paper Scissors Lizard Spock!!</div>
+
+			<div id="marginID">
+				<div class="row centered">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<div class="relClass2">
+							<div id="p1Name">{player1.name}</div>
+							<div class="play1">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<div class="relClass2">
+							<div class="match">
+								<div class="play1Chosen">
+									<form id="myForm">
+										<strong>New Player:</strong>
+										<input id="added" type="text" value="" />
+										<input id="submit" input type="submit" value="Submit">
+									</form>
+									<div class="connectMess">{player1.connectMessage}</div>
+								</div>
+								<div class="resetScreen">Please press the reset button below to play again!
+									<br>
+									<button class="reset-button">Reset Quiz!</button>
+								</div>
+								<div class="resultScreen">
+									{player1.resultStatement}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<div class="relClass2">
+							<div id="p2Name">{player2.name}</div>
+							<div class="play2">
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+					<div id="chatBoxID">
+
+
+
+						<div id="chatbox">
+
+							<div id="innerChat">
+
+
+							</div>
+
+						</div>
+
+						<form name="message" action="">
+							<input name="usermsg" type="text" id="usermsg" size="63" />
+							<input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+
+
+
+							<!-- <input id="username" type="text" placeholder="Name"><br/>
+							<input id="text" type="text" placeholder="Message"><br/>
+							<button id="post">Post</button><br/>
+							<div id="results"></div> -->
+
+
+
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+					<div class="relClass">
+						<div id="scoresID">
+							Player 1 has won {player1.wins} games, Player 2 has won {player2.wins} games, and there have been {player1.ties} tie game(s).
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="assets/javascript/app.js">
+
+
+</script>
+
+</html>

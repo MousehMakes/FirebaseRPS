@@ -1,0 +1,142 @@
+body {
+    background: url('../images/firebase-bg.png') no-repeat center center fixed;
+    margin: 0;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0; 
+
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: 'Timmana', sans-serif;
+}
+.jumbotron {
+    background-color: #ff270a;
+    width: 95%;
+    font-size: 40px;
+    padding: 0px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    height: 75px;
+}
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3 {
+    background-color: #1c0877;
+    height: 300px;
+    margin: 5px;
+    border-radius: 7px;
+        
+}
+
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4 {
+    background-color: #1c0877;
+    height: 300px;
+    margin: 5px;
+    border-radius: 7px;      
+}
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11 {
+    background-color: #1c0877;
+    height: 300px;
+    margin: 5px;
+    margin-left: 4%;
+    border-radius: 7px;      
+}
+
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6 {
+    background-color: #1c0877;
+    height: 200px;
+    margin: 5px;
+    border-radius: 7px;    
+}
+.centered {
+    text-align: center;
+ }
+ #marginID {
+    margin-left: 4%;
+ }
+ .centered > div {
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+ }
+ .relClass {
+    position: relative;
+    height: 200px;
+ }
+ .relClass2 {
+    position: relative;
+    height: 300px;
+ }
+ .play1, .play2, .match, #chatBoxID, #scoresID {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ }
+ #submit, .reset-button, #submitmsg {
+     color: black;
+     border-radius: 10px;
+     height: 20px;
+     font-size: 15px;
+ }
+ #added {
+     color: black;
+     font-size: 15px;
+ }
+.resetScreen {
+    display: none;
+}
+
+#usermsg {
+    width: 300px;
+    color: black;
+    font-size: 15px;
+    height: 30px;
+}
+
+#chatBoxID {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    align-content: center;
+    text-align: center;
+    
+}
+
+#chatbox {
+    height:170px;
+    width: 100%;
+    position: relative;
+}
+
+#innerChat
+{
+    width: 200px;
+    max-height: 170px;
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+    background: rgb(0, 26, 255);
+}
+
+.connectMess {
+    color: #b164e4;
+    font-size: 25px;
+}
+
+#p1Name {
+    font-size: 50px;
+    color: #2790D8;
+}
+
+#p2Name {
+    font-size: 50px;
+    color: #F1D534;
+}
+#scoresID {
+    font-size: 40px;
+    width: 100%;
+    bottom: 50%;
+}
+
